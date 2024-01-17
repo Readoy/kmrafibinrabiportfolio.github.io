@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Website Links</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .websites {
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        .editable {
+            padding: 20px;
+            background-color: #f4f4f4; /* Light gray background for the editable column */
+            text-align: center;
         }
 
         h1 {
             text-align: center;
-            color: #333;
         }
 
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
-            text-align: center;
         }
 
         li {
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
 
         a {
             text-decoration: none;
-            color: #0066cc;
+            color: #333;
+            font-size: 26px;
+            
         }
-
-        a:hover {
-            text-decoration: underline;
+        img {
+            max-width: 50%;
+            height: auto;
+            border: 1px solid #ddd; /* Add a border for better visibility */
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1> I have developed and contributed to various websites in my work</h1>
+    <div class="websites">
+        <h2>VISER X Projects</h2>
         <ul>
-            <li><a href="https://www.example.com" target="_blank">Example Website</a></li>
-            <li><a href="https://www.sample.com" target="_blank">Sample Website</a></li>
+            <li>
+                <img src="car-accident.jpg" alt="KPI Management Website"><br>
+                <a href="https://prokpi.net/" target="_blank">KPI Management Website</a></li>
+            <li><a href="https://leadspider.net/" target="_blank">Affiliate and Lead Management Website</a></li>
+            <li><a href="https://gardenersoul.com/" target="_blank">Personal Blog Website</a></li>
+            <li><a href="https://mcgrathbd.com/" target="_blank">Real Estate Website</a></li>
+            <li><a href="https://hungrycasino.com/" target="_blank">Gambling Website</a></li>
+            <li><a href="https://reginainjurylawyers.ca/" target="_blank">Lawyer Website</a></li>
+            <li><a href="https://no1gifts.com/" target="_blank">e-Commerce Website</a></li>
             <!-- Add more links as needed -->
         </ul>
+    </div>
+    <div class="editable">
+        <h2>Personal Projects</h2>
+        <!-- This column is left blank for your content -->
     </div>
 </body>
 </html>
