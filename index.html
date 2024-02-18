@@ -101,6 +101,32 @@
       background-color: #B8C7F4; 
       transition: background-color 0.3s ease; 
     }
+
+
+
+
+    .white-text-container {
+    background-color: white;
+    color: black; /* Adjust text color as needed */
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* CSS for Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated-text {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
 </style>
 
 
